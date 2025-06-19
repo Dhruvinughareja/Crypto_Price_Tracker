@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
 :root {
-  --color-bg: #181a20;
-  --color-bg-secondary: #23272f;
-  --color-primary: #0db29b;
-  --color-primary-light: #24e1c1;
-  --color-accent: #ffb86c;
-  --color-text: #f4f4f4;
-  --color-text-secondary: #b5b5b5;
-  --color-border: #2d313a;
-  --color-danger: #ff4646;
-  --color-success: #00d515;
+  --color-bg: #f5f7fa;
+  --color-bg-secondary: #ffffff;
+  --color-primary: #3b82f6;
+  --color-primary-light: #a5b4fc;
+  --color-accent: #a21caf;
+  --color-text: #23272f;
+  --color-text-secondary: #4b5563;
+  --color-border: #e5e7eb;
+  --color-danger: #ef4444;
+  --color-success: #22c55e;
   --font-main: 'Inter', 'Outfit', sans-serif;
 }
 

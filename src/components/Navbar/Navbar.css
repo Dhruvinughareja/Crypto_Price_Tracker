@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 5%;
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-secondary);
     color: var(--color-text);
     border-bottom: 2px solid var(--color-primary);
     position: relative;
@@ -59,12 +59,12 @@
     padding: 6px 10px;
     border-radius: 6px;
     border: 2px solid var(--color-primary);
-    background: var(--color-bg);
+    background: var(--color-bg-secondary);
     color: var(--color-text);
   }
   
   .navbar option {
-    background: var(--color-bg);
+    background: var(--color-bg-secondary);
     color: var(--color-text);
   }
   
@@ -76,7 +76,7 @@
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
-    color: var(--color-bg);
+    color: #fff;
     background: var(--color-primary);
     border: none;
     cursor: pointer;
@@ -84,8 +84,8 @@
   }
   
   .navbar button:hover {
-    background: var(--color-text);
-    color: var(--color-primary);
+    background: var(--color-accent);
+    color: #fff;
   }
   
   .navbar button img {
