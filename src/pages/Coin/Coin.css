@@ -2,14 +2,15 @@
     display: grid;
     place-self: center;
     min-height: 80vh;
+    background: var(--color-bg);
   }
   
   .spin {
     width: 65px;
     height: 65px;
     place-self: center;
-    border: 5px solid #1a1a1a;
-    border-top-color: #0db29b;
+    border: 5px solid var(--color-bg-secondary);
+    border-top-color: var(--color-primary);
     border-radius: 50%;
     animation: rotate 1.5s linear infinite;
   }
@@ -25,6 +26,7 @@
     font-family: 'Inter', Arial, sans-serif;
     max-width: 1200px;
     margin: 0 auto;
+    color: var(--color-text);
   }
   
   .coin-name {
@@ -33,7 +35,7 @@
     gap: 1.5rem;
     margin-bottom: 2rem;
     padding: 1rem;
-    background: rgba(13, 178, 155, 0.1);
+    background: rgba(13, 178, 155, 0.08);
     border-radius: 12px;
   }
   
@@ -47,16 +49,16 @@
   
   .coin-name p {
     font-size: 1.5rem;
-    color: white;
+    color: var(--color-text);
     margin: 0;
   }
   
   .coin-name b {
-    color: #0db29b;
+    color: var(--color-primary);
   }
   
   .coin-chart {
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--color-bg-secondary);
     border-radius: 12px;
     padding: 1.5rem;
     margin: 2rem 0;
@@ -71,26 +73,26 @@
   }
   
   .recharts-line-curve {
-    stroke: #0db29b !important;
+    stroke: var(--color-primary) !important;
     stroke-width: 2px !important;
   }
   
   .recharts-dot {
-    fill: #0db29b !important;
+    fill: var(--color-primary) !important;
   }
   
   .recharts-cartesian-grid-horizontal line,
   .recharts-cartesian-grid-vertical line {
-    stroke: rgba(255, 255, 255, 0.1) !important;
+    stroke: rgba(255,255,255,0.08) !important;
   }
   
   .recharts-xAxis line,
   .recharts-yAxis line {
-    stroke: rgba(255, 255, 255, 0.2) !important;
+    stroke: rgba(255,255,255,0.15) !important;
   }
   
   .recharts-text {
-    fill: white !important;
+    fill: var(--color-text) !important;
     font-size: 12px !important;
   }
   
@@ -105,7 +107,8 @@
     list-style: none;
     padding: 1.5rem;
     margin: 0;
-    background: rgba(255, 255, 255, 0.05);
+    background: linear-gradient(145deg, rgba(13,178,155,0.08), rgba(13,178,155,0.03));
+    border: 1px solid var(--color-primary);
     border-radius: 12px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
@@ -116,7 +119,7 @@
   }
   
   .coin-info li:first-child {
-    color: #0db29b;
+    color: var(--color-primary);
     font-size: 0.9rem;
     margin-bottom: 0.5rem;
     text-transform: uppercase;
@@ -124,7 +127,7 @@
   }
   
   .coin-info li:last-child {
-    color: white;
+    color: var(--color-text);
     font-size: 1.25rem;
     font-weight: 600;
   }
@@ -150,20 +153,20 @@
   }
   
   .recharts-tooltip-wrapper {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border: 1px solid #0db29b !important;
+    background: var(--color-bg-secondary) !important;
+    border: 1px solid var(--color-primary) !important;
     border-radius: 4px !important;
   }
   
   .recharts-default-tooltip {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: var(--color-bg-secondary) !important;
     border: none !important;
     border-radius: 4px !important;
     padding: 8px 12px !important;
   }
   
   .recharts-tooltip-label {
-    color: #0db29b !important;
+    color: var(--color-primary) !important;
   }
   
   .coin-info {

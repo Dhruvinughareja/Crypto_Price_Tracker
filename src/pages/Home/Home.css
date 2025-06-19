@@ -2,7 +2,7 @@
 .home {
     padding: 10px;
     padding-bottom: 100px;
-    background-color: #000000;
+    background-color: var(--color-bg);
     animation: fadeIn 1s ease-in-out;
   }
   
@@ -19,18 +19,18 @@
   }
   
   .crypto-word {
-    color: #0db296;
+    color: var(--color-primary);
   }
   
   .hero h1 {
     font-size: max(4vw, 36px);
-    color: #ffffff;
+    color: var(--color-text);
     font-family: 'Poppins', sans-serif;
   }
   
   .hero p {
     width: 75%;
-    color: #e3e3e3;
+    color: var(--color-text-secondary);
     line-height: 1.6;
     font-family: 'Roboto', sans-serif;
   }
@@ -38,7 +38,7 @@
   .hero form {
     padding: 10px;
     width: 85%;
-    background-color: #1a1a1a;
+    background-color: var(--color-bg-secondary);
     border-radius: 8px;
     font-size: 18px;
     display: flex;
@@ -57,8 +57,8 @@
     padding-left: 12px;
     border-radius: 5px;
     height: 40px;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: var(--color-bg);
+    color: var(--color-text);
     transition: transform 0.3s ease;
   }
   
@@ -68,8 +68,8 @@
   
   .hero button {
     border: none;
-    background: #0db29b;
-    color: #ffffff;
+    background: var(--color-primary);
+    color: var(--color-text);
     font-size: 16px;
     padding: 10px 30px;
     border-radius: 5px;
@@ -78,16 +78,16 @@
   }
   
   .hero button:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--color-text);
+    color: var(--color-bg);
   }
   
   .crypto-table {
     max-width: 800px;
     margin: auto;
-    background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.05));
+    background: linear-gradient(rgba(255,255,255,0.03), rgba(0,0,0,0.05));
     border-radius: 15px;
-    border: 1px solid #333333;
+    border: 1px solid var(--color-border);
     overflow: hidden;
     opacity: 0;
     animation: fadeIn 2s ease-out forwards;
@@ -98,9 +98,9 @@
     grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
     padding: 15px 20px;
     align-items: center;
-    border-bottom: 1px solid #333333;
+    border-bottom: 1px solid var(--color-border);
     font-size: 15px;
-    color: #e0e0e0;
+    color: var(--color-text-secondary);
     transition: transform 0.3s ease;
   }
   
@@ -129,12 +129,12 @@
   }
   
   .table-layout .green {
-    color: #00D515;
+    color: var(--color-success);
     text-align: center;
   }
   
   .table-layout .red {
-    color: #FF4646;
+    color: var(--color-danger);
     text-align: center;
   }
   
@@ -180,7 +180,7 @@
   }
   
   .noclasss {
-    color: #ffffff;
+    color: var(--color-text);
   }
   
   /* Add FadeIn animation */
@@ -199,8 +199,8 @@
     justify-content: center;
     margin: 30px auto;
     padding: 15px 40px;
-    background: linear-gradient(145deg, #0db29b, #0a9c8a);
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-bg);
     border: none;
     border-radius: 30px;
     font-size: 16px;
@@ -230,7 +230,8 @@
   }
   
   .load-more-btn:hover {
-    background: linear-gradient(145deg, #0a9c8a, #0db29b);
+    background: var(--color-accent);
+    color: var(--color-bg);
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(13, 178, 155, 0.4);
   }
